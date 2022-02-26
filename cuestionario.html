@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <<link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>QUIZ 11</title>
+  </head>
+  <body>
+<div id="container">
+  <header>
+<center> <h1> BIENVENIDO A TU DESAFIO: CONOCIMIENTOS EN JAVASCRIPT </h1><br><br><br></center>
+  <center><h2><br>EL CUESTIONARIO CONSTA DE 11 PREGUNTAS FALSO O VERDADERO.
+    BUENA SUERTE!<br><br><br>
+  </h2></center>
+  </header>
+  <section>
+    <div id="resultado"></div>
+<form name="quizForm" onsubmit="return verificarRespuestas()">
+  <!-- Aquí arrancan las preguntas-->
+
+<h3>1. En JavaScript, para darle el nombre a una variable, objeto o función, debemos tener en cuenta:</h3>
+<input type="radio" name="preg1" value="a"> a.No se pueden usar mayúsculas <br/>
+<input type="radio" name="preg1" value="b"> b.JavaScript no distingue entre mayúsculas y minúsculas <br/>
+<input type="radio" name="preg1" value="c"> c.JavaScript diferencia entre mayúsculas y minúsculas <br/>    <!--c-->
+<input type="radio" name="preg1" value="d"> d.Ninguna de las anteriores <br/>
+
+<h3>2. Javascript es lo mismo que Java? </h3>
+<input type="radio" name="preg2" value="a"> a.Si <br/>
+<input type="radio" name="preg2" value="b"> b.No <br/>               <!--b-->
+<input type="radio" name="preg2" value="c"> c.A veces <br/>
+<input type="radio" name="preg2" value="d"> d.Casi siempre <br/>
+
+<h3>3. En qué lugar se ejecuta generalmente el código JavaScript? </h3>
+<input type="radio" name="preg3" value="a"> a.Servidor <br/>
+<input type="radio" name="preg3" value="b"> b.Sólo Windows <br/>
+<input type="radio" name="preg3" value="c"> c.Cliente <br/>                    <!--c-->
+<input type="radio" name="preg3" value="d"> d.Ninguna de las anteriores <br/>
+
+<h3>4. La llamada al código Javascript debe colocarse en: </h3>
+<input type="radio" name="preg4" value="a"> a.La sección Body de la página <br/>
+<input type="radio" name="preg4" value="b"> b.Antes de la etiqueta HTML<br/>
+<input type="radio" name="preg4" value="c"> c.Puede colocarse en la sección Head o en Body<br/> <!--c-->
+<input type="radio" name="preg4" value="d"> d.Donde la persona lo desee<br/>
+
+<h3>5. ¿Cuál es la instrucción usada para devolver un valor en una función de JavaScript? </h3>
+<input type="radio" name="preg5" value="a"> a.Send <br/>
+<input type="radio" name="preg5" value="b"> b.Return <br/>  <!--b-->
+<input type="radio" name="preg5" value="c"> c.Value <br/>
+<input type="radio" name="preg5" value="d"> d.Ninguna de las anteriores<br/>
+
+<h3>6. Para terminar las instrucciones en Javascript se utiliza: </h3>
+<input type="radio" name="preg6" value="a"> a.Un punto y coma <br/>
+<input type="radio" name="preg6" value="b"> b.Un punto y coma o un salto de línea<br/>  <!--b-->
+<input type="radio" name="preg6" value="c"> c.Dos puntos suspensivos<br/>
+<input type="radio" name="preg6" value="d"> d.La sentencia End. <br/>
+
+<h3>7. ¿Cuál de estas instrucciones está correctamente escrita en Javascript? </h3>
+<input type="radio" name="preg7" value="a"> a.if (a==0) alert (a); <br/>      <!--a-->
+<input type="radio" name="preg7" value="b"> b.if (a=0) print a; <br/>
+<input type="radio" name="preg7" value="c"> c.if (a==0) { print [a] } <br/>
+<input type="radio" name="preg7" value="d"> d.if (a==0): print a; <br/>
+
+<h3>8. Para concatenar cadenas de caracteres en Javascript se usa el carácter: </h3>
+<input type="radio" name="preg8" value="a"> a.& (ampersand) <br/>
+<input type="radio" name="preg8" value="b"> b.+ (más) <br/>       <!--b-->
+<input type="radio" name="preg8" value="c"> c.(punto). <br/>
+<input type="radio" name="preg8" value="d"> d.* (por)<br/>
+
+<h3>9.  ¿Todo el código JavaScript debe estar por fuerza dentro del archivo .html de la página web? </h3>
+<input type="radio" name="preg9" value="a"> a. Sí, porque si no, no se podría ejecutar en el navegador<br/>
+<input type="radio" name="preg9" value="b"> b. No, es posible incluir código JavaScript en ficheros de extensión .js y hacer un “include”
+                                               en la sección HEAD de la página HTML<br/>   <!--b-->
+
+<h3>10. ¿Qué símbolo se utiliza para los comentarios en Javascript? </h3>
+<input type="radio" name="preg10" value="a"> a.Se usa (//) para comentarios de una sola línea y  <!--a-->
+                                               para comentarios multi-linea se abre con (/*) y se cierra con (*/). <br/>
+<input type="radio" name="preg10" value="b"> b.Se usa (< ! - -) para aperturar comentarios de una sola línea y
+                                               (-->) para cerrar los comentarios.  <br/>
+<input type="radio" name="preg10" value="c"> c.Ninguna de las anteriores <br/>
+
+<h3>11. ¿Qué palabra clave se utiliza para mostrar un texto en pantalla? </h3>
+<input type="radio" name="preg11" value="a"> a.document.write("texto") se usa para imprimir el texto <br/> <!--a-->
+<input type="radio" name="preg11" value="b"> b.typeof.write ("texto") se usa para imprimir el texto <br/>
+<input type="radio" name="preg11" value="c"> c.window.write ("texto") se usa para imprimir el texto <br/>
+<input type="radio" name="preg11" value="d"> d.Todas las anteriores<br/><br/><br/><br/><br/>
+  <!-- Aquí terminan las preguntas-->
+
+        <center><input type="submit" value="Enviar"><br/><br/><br/><br/><br/><br/></center>
+        </form>
+      </section>
+    </div>
+      <script src="quiz.js"></script>
+  </body>
+</html>
